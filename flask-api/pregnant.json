@@ -1,0 +1,593 @@
+{
+    "intents": [
+      {
+        "tag": "sapaan",
+        "patterns": [
+          "Hai",
+          "Halo",
+          "Tes",
+          "Hai, bagaimana kabarmu?",
+          "Selamat siang, saya ingin bertanya.",
+          "Ada orang di sana?",
+          "Halo, apa kabar?"
+        ]
+      },
+      {
+        "tag": "warning",
+        "patterns": [
+          "Saya mengalami pendarahan berat.",
+          "Ada nyeri hebat di perut bagian bawah.",
+          "Saya merasa sangat lemah dan pusing.",
+          "Apakah saya perlu ke rumah sakit jika bayi tidak bergerak?",
+          "Saya mengalami kontraksi lebih dari 5 kali dalam satu jam.",
+          "Tiba-tiba ada cairan yang keluar dari vagina saya.",
+          "Saya merasa sakit kepala yang tidak kunjung reda.",
+          "Ada tanda-tanda demam tinggi, apakah ini bahaya?",
+          "Perut saya terasa kencang dan nyeri.",
+          "Apakah berbahaya jika saya melihat bengkak di kaki saya?",
+          "Saya merasa kesulitan bernapas, apakah saya harus pergi ke rumah sakit?",
+          "Ada masalah dengan penglihatan saya, apakah ini normal?",
+          "Saya mengalami pembengkakan di tangan dan wajah.",
+          "Saya mendengar suara aneh di perut, apakah ini wajar?",
+          "Ada gejala seperti menggigil atau berkeringat dingin.",
+          "Aku lagi pendarahan.",
+          "Perutku sakit banget.",
+          "Aku lemes, kayak mau pingsan.",
+          "Bayi udah lama gak gerak.",
+          "Kontraksiku makin sering.",
+          "Ada cairan aneh keluar.",
+          "Kepalaku pusing parah",
+          "Demam tinggi",
+          "Perutku kencang terus",
+          "Kaki bengkak, ini bahaya ya?",
+          "Susah bernapas, harus ke rumah sakit",
+          "Penglihatan aku blur",
+          "Tanganku bengkak, aneh banget",
+          "Dengar suara aneh di perut",
+          "Keringat dingin",
+          "Ngerasa mual parah"
+        ]
+      },
+      {
+        "tag": "mual",
+        "patterns": [
+          "Kenapa saya sering merasa mual?",
+          "Apa penyebab mual di pagi hari?",
+          "Mengapa ibu hamil sering mual?",
+          "Saya merasa mual setiap hari, apakah itu normal?",
+          "Bagaimana cara mengatasi mual saat hamil?"
+        ]
+      },
+      {
+        "tag": "sakit_perut",
+        "patterns": [
+          "Kenapa perut saya sering sakit?",
+          "Apa yang menyebabkan nyeri di perut saat hamil?",
+          "Apakah normal mengalami sakit perut saat hamil?",
+          "Sakit perut bagian bawah, apakah itu tanda bahaya?",
+          "Perut saya sakit, apa yang harus saya lakukan?"
+        ]
+      },
+      {
+        "tag": "kontraksi",
+        "patterns": [
+          "Bagaimana cara membedakan kontraksi asli dan palsu?",
+          "Kapan kontraksi biasanya mulai terjadi?",
+          "Apa yang harus saya lakukan jika mengalami kontraksi?",
+          "Apakah kontraksi selalu menandakan persalinan?",
+          "Seperti apa rasanya kontraksi persalinan?"
+        ]
+      },
+      {
+        "tag": "gerakan_janin",
+        "patterns": [
+          "Berapa kali gerakan janin normal dalam sehari?",
+          "Kenapa saya tidak merasakan gerakan janin?",
+          "Apakah gerakan janin yang terlalu aktif normal?",
+          "Bagaimana jika gerakan janin saya berkurang?",
+          "Kapan biasanya janin mulai bergerak?"
+        ]
+      },
+      {
+        "tag": "perawatan_kehamilan",
+        "patterns": [
+          "Apa yang harus saya lakukan untuk merawat kehamilan?",
+          "Bagaimana cara menjaga kesehatan selama hamil?",
+          "Apakah saya perlu mengonsumsi vitamin tambahan?",
+          "Apakah perawatan prenatal itu penting?",
+          "Bagaimana cara merawat diri selama kehamilan?"
+        ]
+      },
+      {
+        "tag": "diet_selama_hamil",
+        "patterns": [
+          "Makanan apa yang sebaiknya saya konsumsi selama hamil?",
+          "Apakah ada makanan yang harus dihindari selama hamil?",
+          "Berapa banyak kalori yang harus saya makan selama hamil?",
+          "Bolehkah ibu hamil mengonsumsi makanan pedas?",
+          "Apakah diet sehat penting selama kehamilan?"
+        ]
+      },
+      {
+        "tag": "olahraga_selama_hamil",
+        "patterns": [
+          "Apakah aman berolahraga saat hamil?",
+          "Olahraga apa yang direkomendasikan untuk ibu hamil?",
+          "Seberapa sering ibu hamil boleh berolahraga?",
+          "Apakah ada olahraga yang harus dihindari selama kehamilan?",
+          "Bolehkah saya melakukan yoga saat hamil?"
+        ]
+      },
+      {
+        "tag": "tidur_selama_hamil",
+        "patterns": [
+          "Kenapa saya kesulitan tidur saat hamil?",
+          "Apa posisi tidur terbaik untuk ibu hamil?",
+          "Bagaimana cara mengatasi insomnia saat hamil?",
+          "Bolehkah tidur telentang saat hamil?",
+          "Apakah normal sering terbangun di malam hari selama hamil?"
+        ]
+      },
+      {
+        "tag": "kunjungan_dokter",
+        "patterns": [
+          "Seberapa sering saya harus periksa ke dokter?",
+          "Kapan saya harus mulai periksa kehamilan?",
+          "Apa yang harus saya tanyakan saat kunjungan dokter?",
+          "Berapa kali saya perlu melakukan USG selama hamil?",
+          "Kapan waktu terbaik untuk melakukan kunjungan prenatal?"
+        ]
+      },
+      {
+        "tag": "nyeri_punggung",
+        "patterns": [
+          "Apa yang menyebabkan nyeri punggung selama kehamilan?",
+          "Bagaimana cara mengatasi sakit punggung saat hamil?",
+          "Apakah normal mengalami nyeri punggung saat hamil?",
+          "Kenapa punggung saya sering sakit selama kehamilan?",
+          "Apa yang bisa saya lakukan untuk mengurangi nyeri punggung?"
+        ]
+      },
+      {
+        "tag": "bengkak_kaki",
+        "patterns": [
+          "Apakah normal jika kaki saya bengkak saat hamil?",
+          "Bagaimana cara mengurangi bengkak pada kaki?",
+          "Kenapa kaki saya sering bengkak selama hamil?",
+          "Apakah bengkak di kaki berbahaya?",
+          "Bolehkah saya menggunakan kompres untuk bengkak kaki?"
+        ]
+      },
+      {
+        "tag": "tekanan_darah",
+        "patterns": [
+          "Apakah tekanan darah tinggi berbahaya saat hamil?",
+          "Bagaimana cara menjaga tekanan darah tetap normal selama kehamilan?",
+          "Kenapa tekanan darah saya naik selama hamil?",
+          "Apakah tekanan darah rendah normal saat hamil?",
+          "Berapa tekanan darah yang aman selama kehamilan?"
+        ]
+      },
+      {
+        "tag": "diabetes_gestasional",
+        "patterns": [
+          "Apa itu diabetes gestasional?",
+          "Bagaimana cara menghindari diabetes gestasional?",
+          "Apakah diabetes gestasional berbahaya bagi bayi?",
+          "Apakah saya perlu diet khusus jika memiliki diabetes gestasional?",
+          "Bagaimana cara mengetahui apakah saya terkena diabetes gestasional?"
+        ]
+      },
+      {
+        "tag": "keguguran",
+        "patterns": [
+          "Apa saja tanda-tanda keguguran?",
+          "Bagaimana cara mencegah keguguran?",
+          "Apa penyebab utama keguguran?",
+          "Apakah stres bisa menyebabkan keguguran?",
+          "Kapan risiko keguguran menurun?"
+        ]
+      },
+      {
+        "tag": "persiapan_persalinan",
+        "patterns": [
+          "Kapan saya harus mulai mempersiapkan persalinan?",
+          "Apa saja yang harus saya siapkan untuk persalinan?",
+          "Bagaimana cara menghadapi persalinan dengan tenang?",
+          "Apa yang perlu dibawa ke rumah sakit saat persalinan?",
+          "Kapan waktu terbaik untuk pergi ke rumah sakit saat persalinan?"
+        ]
+      },
+      {
+        "tag": "air_ketuban",
+        "patterns": [
+          "Bagaimana tanda-tanda air ketuban pecah?",
+          "Apa yang harus saya lakukan jika air ketuban pecah?",
+          "Berapa banyak cairan yang keluar saat ketuban pecah?",
+          "Apakah air ketuban pecah selalu menandakan persalinan?",
+          "Kapan biasanya air ketuban pecah selama kehamilan?"
+        ]
+      },
+      {
+        "tag": "gerakan_bayi",
+        "patterns": [
+          "Apakah gerakan bayi menandakan kesehatan?",
+          "Kapan bayi mulai bergerak dalam kandungan?",
+          "Berapa kali gerakan bayi normal dalam sehari?",
+          "Bagaimana jika bayi tidak banyak bergerak?",
+          "Apakah normal jika bayi terlalu aktif?"
+        ]
+      },
+      {
+        "tag": "pola_makan_bayi",
+        "patterns": [
+          "Bagaimana pola makan yang sehat untuk bayi?",
+          "Apakah bayi perlu makan setiap dua jam?",
+          "Kapan saya harus mulai memberikan makanan padat kepada bayi?",
+          "Bagaimana cara memastikan bayi mendapat nutrisi yang cukup?",
+          "Apakah bayi boleh diberi air putih?"
+        ]
+      },
+      {
+        "tag": "tanda_persalinan",
+        "patterns": [
+          "Apa saja tanda-tanda persalinan sudah dekat?",
+          "Kapan saya harus pergi ke rumah sakit saat kontraksi?",
+          "Bagaimana cara mengenali tanda persalinan?",
+          "Apa yang perlu saya lakukan jika merasakan tanda persalinan?",
+          "Apakah pecah ketuban selalu tanda persalinan?"
+        ]
+      },
+      {
+        "tag": "persalinan_normal",
+        "patterns": [
+          "Apa yang dimaksud dengan persalinan normal?",
+          "Apa yang harus saya lakukan saat persalinan normal?",
+          "Berapa lama proses persalinan normal biasanya?",
+          "Apa tanda-tanda persalinan normal?",
+          "Bagaimana cara mengetahui jika saya sedang mengalami persalinan normal?"
+        ]
+      },
+      {
+        "tag": "persalinan_caesar",
+        "patterns": [
+          "Apa itu persalinan caesar?",
+          "Kapan persalinan caesar diperlukan?",
+          "Apa saja risiko dari persalinan caesar?",
+          "Bagaimana proses pemulihan setelah persalinan caesar?",
+          "Apakah saya bisa memilih untuk persalinan caesar?"
+        ]
+      },
+      {
+        "tag": "perawatan_bayi",
+        "patterns": [
+          "Bagaimana cara merawat bayi yang baru lahir?",
+          "Apa yang harus saya lakukan saat bayi menangis?",
+          "Berapa sering bayi harus menyusui?",
+          "Bagaimana cara menggendong bayi dengan benar?",
+          "Kapan bayi harus mulai diobati jika sakit?"
+        ]
+      },
+      {
+        "tag": "pengalaman_melahirkan",
+        "patterns": [
+          "Bagaimana pengalaman melahirkan itu?",
+          "Apa yang harus saya persiapkan sebelum melahirkan?",
+          "Bagaimana cara menghadapi rasa sakit saat melahirkan?",
+          "Apa yang terjadi setelah melahirkan?",
+          "Apakah saya bisa mendapatkan dukungan saat melahirkan?"
+        ]
+      },
+      {
+        "tag": "kontraksi_awal",
+        "patterns": [
+          "Bagaimana rasanya kontraksi awal?",
+          "Apa tanda-tanda kontraksi awal?",
+          "Kapan saya harus mulai khawatir tentang kontraksi?",
+          "Apakah kontraksi awal selalu menyakitkan?",
+          "Bagaimana cara mengatasi kontraksi awal?"
+        ]
+      },
+      {
+        "tag": "tanda_kehamilan",
+        "patterns": [
+          "Apa saja tanda-tanda awal kehamilan?",
+          "Bagaimana cara memastikan saya hamil?",
+          "Kapan saya harus melakukan tes kehamilan?",
+          "Apakah ada tanda-tanda kehamilan yang tidak biasa?",
+          "Bagaimana cara mengetahui apakah saya hamil?"
+        ]
+      },
+      {
+        "tag": "pemeriksaan_kehamilan",
+        "patterns": [
+          "Apa saja pemeriksaan yang perlu dilakukan selama kehamilan?",
+          "Seberapa penting USG selama kehamilan?",
+          "Kapan sebaiknya melakukan tes darah selama kehamilan?",
+          "Apakah saya perlu melakukan tes genetik?",
+          "Apa yang harus saya bawa saat pemeriksaan kehamilan?"
+        ]
+      },
+      {
+        "tag": "kesehatan_mental",
+        "patterns": [
+          "Bagaimana menjaga kesehatan mental selama kehamilan?",
+          "Apakah normal merasa cemas saat hamil?",
+          "Bagaimana cara mengatasi stres saat hamil?",
+          "Kapan saya harus mencari bantuan untuk kesehatan mental?",
+          "Apa yang dapat membantu menjaga kesehatan mental saya?"
+        ]
+      },
+      {
+        "tag": "komplikasi_kehamilan",
+        "patterns": [
+          "Apa saja komplikasi yang mungkin terjadi selama kehamilan?",
+          "Bagaimana cara mengenali tanda-tanda komplikasi?",
+          "Apakah saya harus khawatir tentang komplikasi tertentu?",
+          "Apa yang harus dilakukan jika mengalami komplikasi?",
+          "Bagaimana cara mencegah komplikasi selama kehamilan?"
+        ]
+      },
+      {
+        "tag": "persiapan_nifas",
+        "patterns": [
+          "Apa yang perlu dipersiapkan untuk masa nifas?",
+          "Bagaimana cara menjaga kesehatan selama nifas?",
+          "Kapan saya bisa mulai beraktivitas normal setelah melahirkan?",
+          "Apa yang perlu diperhatikan selama masa nifas?",
+          "Bagaimana cara merawat diri setelah melahirkan?"
+        ]
+      },
+      {
+        "tag": "menyusui",
+        "patterns": [
+          "Bagaimana cara menyusui bayi dengan benar?",
+          "Berapa lama saya harus menyusui bayi?",
+          "Apakah saya perlu mengonsumsi makanan khusus saat menyusui?",
+          "Apa yang harus dilakukan jika bayi tidak mau menyusui?",
+          "Bagaimana cara mengetahui jika bayi cukup mendapatkan ASI?"
+        ]
+      },
+      {
+        "tag": "imunisasi_bayi",
+        "patterns": [
+          "Kapan bayi harus mendapatkan imunisasi pertama?",
+          "Apa saja imunisasi yang wajib untuk bayi?",
+          "Bagaimana cara merawat bayi setelah imunisasi?",
+          "Apakah ada efek samping setelah imunisasi?",
+          "Bagaimana jika saya melewatkan jadwal imunisasi?"
+        ]
+      },
+      {
+        "tag": "perawatan_anjing_bayi",
+        "patterns": [
+          "Bagaimana cara merawat bayi yang baru lahir?",
+          "Apa yang harus saya lakukan saat bayi menangis?",
+          "Berapa sering bayi harus menyusui?",
+          "Bagaimana cara menggendong bayi dengan benar?",
+          "Kapan bayi harus mulai diobati jika sakit?"
+        ]
+      },
+      {
+        "tag": "bimbingan_parenting",
+        "patterns": [
+          "Apa itu bimbingan parenting?",
+          "Bagaimana cara mendapatkan bimbingan parenting?",
+          "Apa yang harus saya lakukan untuk menjadi orang tua yang baik?",
+          "Kapan waktu yang tepat untuk mencari bimbingan parenting?",
+          "Apakah ada kelas parenting untuk ibu hamil?"
+        ]
+      },
+      {
+        "tag": "kesehatan_janin",
+        "patterns": [
+          "Bagaimana cara menjaga kesehatan janin?",
+          "Apa yang perlu saya perhatikan untuk kesehatan janin?",
+          "Kapan janin mulai mendapatkan nutrisi dari makanan?",
+          "Apakah saya perlu suplemen untuk kesehatan janin?",
+          "Apa saja faktor yang mempengaruhi kesehatan janin?"
+        ]
+      },
+      {
+        "tag": "persiapan_hamil",
+        "patterns": [
+          "Apa yang harus dipersiapkan sebelum hamil?",
+          "Bagaimana cara merencanakan kehamilan?",
+          "Kapan waktu yang tepat untuk memulai program hamil?",
+          "Apakah saya perlu melakukan pemeriksaan kesehatan sebelum hamil?",
+          "Apa yang harus dipertimbangkan saat merencanakan kehamilan?"
+        ]
+      },
+      {
+        "tag": "hubungan_suami_istri",
+        "patterns": [
+          "Bagaimana menjaga hubungan baik selama kehamilan?",
+          "Apakah hubungan suami istri berubah selama hamil?",
+          "Bagaimana cara mendukung pasangan selama kehamilan?",
+          "Kapan waktu yang tepat untuk membicarakan persiapan bayi?",
+          "Apa yang harus dilakukan jika ada konflik selama kehamilan?"
+        ]
+      },
+      {
+        "tag": "kehamilan_berisiko",
+        "patterns": [
+          "Apa yang dimaksud dengan kehamilan berisiko?",
+          "Bagaimana cara mengelola kehamilan berisiko?",
+          "Apa tanda-tanda kehamilan berisiko?",
+          "Apakah kehamilan berisiko selalu berbahaya?",
+          "Kapan saya perlu menghubungi dokter untuk kehamilan berisiko?"
+        ]
+      },
+      {
+        "tag": "pemeriksaan_usg",
+        "patterns": [
+          "Apa itu pemeriksaan USG?",
+          "Seberapa sering saya perlu melakukan USG selama kehamilan?",
+          "Apa yang bisa saya lihat di USG?",
+          "Apakah USG aman untuk bayi?",
+          "Kapan waktu terbaik untuk melakukan USG?"
+        ]
+      },
+      {
+        "tag": "kelahiran_prematur",
+        "patterns": [
+          "Apa yang dimaksud dengan kelahiran prematur?",
+          "Apa penyebab kelahiran prematur?",
+          "Bagaimana cara mencegah kelahiran prematur?",
+          "Apa saja risiko kelahiran prematur bagi bayi?",
+          "Kapan saya harus khawatir jika mengalami tanda-tanda kelahiran prematur?"
+        ]
+      },
+      {
+        "tag": "ciri_ciri_hamil",
+        "patterns": [
+          "Apa saja ciri-ciri seseorang hamil?",
+          "Bagaimana cara mengetahui saya hamil?",
+          "Kapan sebaiknya saya melakukan tes kehamilan?",
+          "Apa saja gejala awal kehamilan?",
+          "Apakah ada ciri khusus yang menunjukkan kehamilan?"
+        ]
+      },
+      {
+        "tag": "tips_menyusui",
+        "patterns": [
+          "Apa tips untuk menyusui yang sukses?",
+          "Bagaimana cara meningkatkan produksi ASI?",
+          "Apa yang harus dilakukan jika bayi tidak mau menyusu?",
+          "Kapan waktu terbaik untuk mulai menyusui?",
+          "Bagaimana cara menyusui dengan nyaman?"
+        ]
+      },
+      {
+        "tag": "komunikasi_ibu_bayi",
+        "patterns": [
+          "Bagaimana cara berkomunikasi dengan bayi yang baru lahir?",
+          "Apa yang perlu diperhatikan saat berbicara dengan bayi?",
+          "Kapan bayi mulai bisa merespons komunikasi?",
+          "Apa saja cara untuk merangsang komunikasi dengan bayi?",
+          "Bagaimana cara membangun ikatan emosional dengan bayi?"
+        ]
+      },
+      {
+        "tag": "seputar_fertilisasi",
+        "patterns": [
+          "Apa itu proses fertilisasi?",
+          "Bagaimana cara meningkatkan peluang hamil?",
+          "Apa faktor yang mempengaruhi fertilisasi?",
+          "Kapan waktu terbaik untuk berhubungan saat ingin hamil?",
+          "Apakah ada makanan yang membantu fertilisasi?"
+        ]
+      },
+      {
+        "tag": "kemandulan",
+        "patterns": [
+          "Apa yang dimaksud dengan kemandulan?",
+          "Apa penyebab umum kemandulan?",
+          "Bagaimana cara mengatasi masalah kemandulan?",
+          "Kapan saya harus mencari bantuan untuk kemandulan?",
+          "Apakah ada pengobatan untuk kemandulan?"
+        ]
+      },
+      {
+        "tag": "tips_hamil_sehat",
+        "patterns": [
+          "Apa saja tips untuk kehamilan yang sehat?",
+          "Bagaimana cara menjaga pola makan saat hamil?",
+          "Kapan waktu yang tepat untuk berolahraga selama kehamilan?",
+          "Apa saja makanan yang sebaiknya dihindari saat hamil?",
+          "Bagaimana cara menjaga kesehatan mental selama kehamilan?"
+        ]
+      },
+      {
+        "tag": "kondisi_kesehatan_ibu",
+        "patterns": [
+          "Bagaimana kondisi kesehatan ibu mempengaruhi kehamilan?",
+          "Apa yang perlu diperhatikan jika ibu memiliki riwayat penyakit?",
+          "Bagaimana cara menjaga kesehatan ibu selama hamil?",
+          "Kapan harus berkonsultasi dengan dokter tentang kondisi kesehatan?",
+          "Apa yang dapat dilakukan untuk mendukung kesehatan ibu hamil?"
+        ]
+      },
+      {
+        "tag": "persalinan_darurat",
+        "patterns": [
+          "Apa yang harus dilakukan jika terjadi persalinan darurat?",
+          "Bagaimana cara mengenali tanda-tanda persalinan darurat?",
+          "Apa yang perlu disiapkan untuk persalinan darurat?",
+          "Kapan saya harus pergi ke rumah sakit untuk persalinan darurat?",
+          "Bagaimana cara berkomunikasi dengan tim medis saat persalinan darurat?"
+        ]
+      },
+      {
+        "tag": "dukungan_mental",
+        "patterns": [
+          "Apa yang dimaksud dengan dukungan mental selama kehamilan?",
+          "Bagaimana cara mendapatkan dukungan mental saat hamil?",
+          "Kapan sebaiknya mencari konseling selama kehamilan?",
+          "Apa saja bentuk dukungan mental yang bisa didapatkan?",
+          "Bagaimana cara mendiskusikan kebutuhan dukungan dengan pasangan?"
+        ]
+      },
+      {
+        "tag": "kesehatan_janin",
+        "patterns": [
+          "Bagaimana cara menjaga kesehatan janin selama kehamilan?",
+          "Apa yang harus saya konsumsi untuk mendukung kesehatan janin?",
+          "Kapan saya perlu melakukan pemeriksaan untuk kesehatan janin?",
+          "Apa tanda-tanda janin sehat selama kehamilan?",
+          "Bagaimana cara mengurangi risiko masalah kesehatan janin?"
+        ]
+      },
+      {
+        "tag": "makanan_hamil",
+        "patterns": [
+          "Apa saja makanan yang baik untuk ibu hamil?",
+          "Bagaimana cara menyusun menu makanan sehat untuk ibu hamil?",
+          "Apakah ada makanan yang harus dihindari selama kehamilan?",
+          "Kapan sebaiknya ibu hamil mulai memperhatikan asupan makanan?",
+          "Apa pentingnya nutrisi selama kehamilan?"
+        ]
+      },
+      {
+        "tag": "kegiatan_hamil",
+        "patterns": [
+          "Apa saja kegiatan yang aman dilakukan selama kehamilan?",
+          "Bagaimana cara tetap aktif selama kehamilan?",
+          "Kapan saya boleh kembali berolahraga setelah melahirkan?",
+          "Apa aktivitas yang sebaiknya dihindari saat hamil?",
+          "Bagaimana cara menjaga keseimbangan antara istirahat dan aktivitas?"
+        ]
+      },
+      {
+        "tag": "gejala_kehamilan",
+        "patterns": [
+          "Apa saja gejala umum kehamilan?",
+          "Bagaimana cara membedakan gejala kehamilan dengan gejala PMS?",
+          "Apa yang harus dilakukan jika mengalami gejala tidak biasa saat hamil?",
+          "Kapan sebaiknya berkonsultasi dengan dokter tentang gejala kehamilan?",
+          "Apakah semua ibu hamil mengalami gejala yang sama?"
+        ]
+      },
+      {
+        "tag": "vitamin_ibu_hamil",
+        "patterns": [
+          "Apa vitamin yang diperlukan untuk ibu hamil?",
+          "Bagaimana cara mendapatkan vitamin yang cukup selama kehamilan?",
+          "Kapan waktu yang tepat untuk mulai mengonsumsi suplemen vitamin?",
+          "Apakah ada efek samping dari vitamin untuk ibu hamil?",
+          "Apa pentingnya asam folat untuk ibu hamil?"
+        ]
+      },
+      {
+        "tag": "kebiasaan_hidup_sehat",
+        "patterns": [
+          "Bagaimana cara menerapkan kebiasaan hidup sehat selama kehamilan?",
+          "Apa saja kebiasaan yang perlu dihindari saat hamil?",
+          "Kapan waktu yang tepat untuk beralih ke pola makan sehat?",
+          "Bagaimana cara menjaga kesehatan fisik dan mental selama hamil?",
+          "Apa dampak dari kebiasaan buruk pada kesehatan ibu dan janin?"
+        ]
+      }
+    ]
+  }
+  

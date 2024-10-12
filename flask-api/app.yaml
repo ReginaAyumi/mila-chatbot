@@ -1,0 +1,13 @@
+runtime: python39  
+entrypoint: gunicorn -b :$PORT app:app
+
+instance_class: F4
+
+handlers:
+- url: /.*
+  script: app.py
+
+network:
+  session_affinity: true 
+
+env: standard
